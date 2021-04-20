@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Desafio Menu</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        * { /* Aqui colocou uma borda geral, ai foi usado o *    */
+            box-sizing: border-box;
+        }
+
+        body { /* Aqui no body, colocou sem margem, a fonte que pegou na net, e o fundo cinza */
+            margin:0;
+            font-family: 'Oswald', sans-serif;
+            background-color: lightgray;
+        }
+
+        .cabecalho { /* Aqui colocou o cabeçalho, preto, com a borda, com a altura e com o box-sizing (olhar sobre isso) */
+            background: #333;
+            border-bottom: solid 5px #46b9b1;
+            height: 80px;
+            box-sizing: content-box;
+        }
+        .logo {
+            display: inline-block;
+            height: 80px;
+            padding: 15px;
+        }
+        .logo img { /* Sobre a logo, aqui ajustou ela */
+            height: 100%;
+        }
+        .menu-toggle { /* Aquele botão do lado direito*/
+            float: right;
+            color: #eee;
+            background-color: #555; /* Aqui o fundo do botao fica cinza e com o color acima fica branco hehehe */
+            border: solid 1px #777; 
+            border-radius: 5px; /* Border Radius é feito para dar a quebra no botão e nao ficar tao quadrado */
+            height: 40px; 
+            padding: 10px 20px; /* Coloca aquele padding para dar aquele espaçamento */
+            margin: 20px 15px; /* Aqui já coloca uma margem para o botao, pra nao ficar grudado la encima*/
+        }
+
+        .menu {
+            display: inline-block;
+            vertical-align: top;
+            height: 80px;
+            padding: 25px;
+        }
+        .menu ul { 
+            margin: 0;
+            padding: 0; /* O ul geralmente vem com margem e padding já, então da pra tirar. */
+        }
+        .menu li { /* Aqui colocou tudo em linha*/
+            display: inline-block;
+        }
+        .cabecalho a { /* Aqui ja mecheu no texto geral dos topicos ali, que está ate com o <a> como um tipo de id */
+            text-decoration: none;
+            color: #eee;
+            font-size: 1.3em; /* Aquele aumento de fonte */
+        }
+
+        .menu a { /* Aqui deu o padding só nas palavras do lado esquerdo, depois procurar porque */
+            padding: 15px;
+        }
+
+        .autenticacao {
+            float: right;
+            height: 80px;
+            padding: 25px;
+        }
+
+        .menu a:hover { /* O hover é aquele efeito que da encima do botao que está prestes a clicar */
+            background-color: #46b9b1;
+            color: #000;
+
+        }
+        .botao { /* Esse css vai para o botao */
+            border-radius: 30px;
+            padding: 10px 20px;
+            margin: 10px;
+        }
+        .destaque { /* Já esse css vai pro registrar, que ta com a classe destaque */
+            background-color: #f50a31;
+            color: #fff;
+        }
+
+        @media(min-width: 679px) { /*Criou uma media query para quando a tela for menor que tantos px, ele aparecer, o toggle*/
+            .menu-toggle {
+                display: none;
+            }
+        }
+
+        @media(max-width: 680px) { /* Já esse some o menu, com o inicio, etc */
+            .menu {
+                display: none;
+            }
+        }
+        @media(max-width: 910px) {
+            .autenticacao { /* Esse aqui a autenticacao, registrar e login somem */
+                display: none;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <a href="#inicio">
+                <img src="http://files.cod3r.com.br/curso-web/logo.png" alt="Logo" />
+            </a>
+        </div>
+        <button class="menu-toggle">
+            <i class="fa fa-lg fa-bars"></i>
+        </button>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="#inicio">Início</a>
+                </li>
+                <li>
+                    <a href="#cursos">Cursos</a>
+                </li>
+                <li>
+                    <a href="#sobre">Sobre</a>
+                </li>
+                <li>
+                    <a href="#contato">Contato</a>
+                </li>
+            </ul>
+        </nav>
+        <aside class="autenticacao">
+            <a href="#login">Login</a>
+            <a href="#registar" class="botao destaque">Registrar</a>
+        </aside>
+    </header>
+
+    <script> /* Parte dedicada ao javascript */
+        window.onhashchange = function(e) { /*Não entendi muito bem essa parte*/
+            const oldURL = e.oldURL.split('#')[1]
+            const newURL = e.newURL.split('#')[1]
+            console.log(oldURL, newURL)
+            const oldMenu = document.querySelector(`.menu a[href='#${oldURL}']`)
+            const newMenu = document.querySelector(`.menu a[href='#${newURL}']`)
+            oldMenu && oldMenu.classList.remove('selected')
+            newMenu && newMenu.classList.add('selected')
+        }
+    </script>
+</body>
+
+</html>
