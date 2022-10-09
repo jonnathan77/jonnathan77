@@ -3,8 +3,8 @@ Sou um jovem muito interessado, apaixonado e focado na area de TI, um jovem que 
 
 Atualmente estou em busca de um estagio em desenvolvimento web.
 
-Tenho conhecimentos em HTML, CSS, JavaScript, PHP, Pyton, C,  MySql, React, ReactJs, WordPress, entre outros conhecimentos.
+Tenho conhecimentos em Angular, TypeScript,Ionic, NodeJS, PHP, Laravel,Sql, ReactNative, ReactJs, outros conhecimentos.
 
-Me vejo no futuro como um dev em uma empresa que me dê oportunidade de crescimento, uma empresa com ideais e que eu agregue a equipe.
+Hoje me encontro como um Desenvolvedor Mobile e FullStack, e quero me tornar um grande Lider de equipe de Dev, em uma empresa que me dê oportunidade de crescimento, uma empresa com valores e que valorize o profissional.
 
-Contatos: 3198862-2840 
+Contatos: (31)98862-2840 
