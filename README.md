@@ -1,7 +1,7 @@
 <olá>
 Sou um jovem muito interessado, apaixonado e focado na area de TI, um jovem que deseja se tornar um grande dev front end.
 
-Atualmente estou em busca de um estagio em desenvolvimento web.
+Atualmente estou em busca de ser um Desenvolvedor Pleno em Aplicações Mobile ou FullStack Web.
 
 Tenho conhecimentos em Angular, TypeScript,Ionic, NodeJS, PHP, Laravel,Sql, ReactNative, ReactJs, outros conhecimentos.
 
