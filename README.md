@@ -8,3 +8,9 @@ Tenho conhecimentos em Angular, TypeScript,Ionic, NodeJS, PHP, Laravel,Sql, Reac
 Hoje me encontro como um Desenvolvedor Mobile e FullStack, e quero me tornar um grande Lider de equipe de Dev, em uma empresa que me dê oportunidade de crescimento, uma empresa com valores e que valorize o profissional.
 
 Contatos: (31)98862-2840 
+
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=git,kubernetes,docker,c,vim" />
+  </a>
+</p>
