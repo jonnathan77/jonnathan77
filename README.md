@@ -1,5 +1,5 @@
 <olá>
-Sou um jovem muito interessado, apaixonado e focado na area de TI, um jovem que deseja se tornar um grande dev front end.
+Sou um jovem muito interessado, apaixonado e focado na area de TI, um jovem que deseja se tornar um grande dev fullstack
 
 Hoje me encontro como um Desenvolvedor Mobile e FullStack, e quero me tornar um grande Lider de equipe de Dev, em uma empresa que me dê oportunidade de crescimento, que tenha valores e que valorize o profissional.
 
